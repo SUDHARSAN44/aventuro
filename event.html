@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AVENTURO'22</title>
-  <link rel="icon" type="image/x-icon" href="/images/fav.png">
+  <link rel="icon" href="/images/fav.png">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"   crossorigin="anonymous">>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float">
@@ -267,6 +267,11 @@
   opacity: 0;
   max-height: 0;
   transition: all 1s ease;
+}
+
+
+.card1:hover .icon{
+  display: none;
 }
 
 .card1:hover {
@@ -1068,6 +1073,41 @@ body {
 
 }
 
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 </style>
 
@@ -1138,15 +1178,16 @@ body {
     <h2 style="color:azure;font-family:'outline';font-size:4vh;font-weight:bolder;">Technical Events</h2>
 
     <div class="flipster" >
-        <ul class="flip-items">
-           <li>
+       <ul class="flip-items">
+           <li id="myBtn" onclick="poster(0)">
             <div class="slide slide1 ">
+              <p>Group Distribution</p>
 
                 <div class="content text-center">
   
                     <div class="icon1">
   
-                        <img src="./images/image (22).png" style="width: 300px;" alt="">
+                        <img src="./images/image (15).png" style="width: 300px;" alt="">
   
                     </div>
   
@@ -1161,11 +1202,11 @@ body {
                   <a href="https://forms.gle/33tTUiyejpEjRLM67"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
   
                 </div>
-  
+                <br>
             </div>
   
            </li>
-            <li>
+            <li id="myBtn" >
                 <div class="slide slide1">
 
                     <div class="content ">
@@ -1188,42 +1229,45 @@ body {
                       <a href="https://forms.gle/41U4rDifc8YpFDq58"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
         
                     </div>
-        
+                    
+
+        <br>  
                 </div>
             </li>
-            <li>
-                <div class="slide slide1">
+            <li id="myBtn" onclick="poster(1)">
+              <p>Paper</p>
+                           <div class="slide slide1">
 
                     <div class="content text-center">
           
                         <div class="icon1">
           
+                          <img src="./images/image (22).png" style="width: 300px;" alt="">
+          
+                        </div>
+          
+                    </div>
+          
+                </div>
+          
+                <div class="slide slide2"  style="background-color: #f1efef;">
+          
+                    <div class="content text-center">
+          
+                      <a href="https://forms.gle/41U4rDifc8YpFDq58"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+          
+                    </div>
+          
+                </div>
+            </li>
+<li id="myBtn" onclick="poster(3)">
+                           <div class="slide slide1">
+CAD
+                    <div class="content text-center">
+            
+                        <div class="icon1">
+            
                           <img src="./images/image (17).png" style="width: 300px;" alt="">
-          
-                        </div>
-          
-                    </div>
-          
-                </div>
-          
-                <div class="slide slide2"  style="background-color: #f1efef;">
-          
-                    <div class="content text-center">
-          
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSenjoOE7YPPsZ_adiFN0KaRR4nwExrr9lpajhv9C0m2ZmZ-lw/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
-          
-                    </div>
-          
-                </div>
-            </li>
-            <li>
-                <div class="slide slide1">
-
-                    <div class="content text-center">
-            
-                        <div class="icon1">
-            
-                          <img src="./images/image (18).png" style="width: 300px;" alt="">
             
                         </div>
             
@@ -1235,21 +1279,21 @@ body {
             
                     <div class="content text-center">
             
-                       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPIeC2Z5Vntop6jYUptVTHfC44XrOjwKKJcU7nPVk6iB40tA/viewform"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+                       <a href="https://docs.google.com/forms/d/e/1FAIpQLSenjoOE7YPPsZ_adiFN0KaRR4nwExrr9lpajhv9C0m2ZmZ-lw/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
             
                     </div>
             
                 </div>
             </li>
 
-            <li>
-                <div class="slide slide1">
-
+<li id="myBtn" onclick="poster(3)">
+                           <div class="slide slide1">
+                            CODING
                     <div class="content ">
         
                         <div class="icon1">
         
-                          <img src="./images/image (16).png" style="width: 300px;" alt="">
+                          <img src="./images/image (18).png" style="width: 300px;" alt="">
         
                         </div>
         
@@ -1262,7 +1306,7 @@ body {
                     <div class="content text-center">
         
         
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLScAsnuj8RCMjqTdBY8F3H9pA1hoQdQk-Bmm4wvKu-Ant3xfXw/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPIeC2Z5Vntop6jYUptVTHfC44XrOjwKKJcU7nPVk6iB40tA/viewform"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
         
                     </div>
         
@@ -1284,10 +1328,10 @@ body {
     <h2 style="color:azure;font-family:'outline';font-size:4vh;font-weight:bolder;">Non - Technical Events</h2>
     <div class="flipster">
         <ul class="flip-items">
-        
+
             <li>
                 <div class="slide slide1 ">
-
+                  CONNEXION
                     <div class="content text-center">
       
                         <div class="icon1">
@@ -1304,16 +1348,17 @@ body {
       
                     <div class="content text-center">
       
-                      <a href="https://forms.gle/33tTUiyejpEjRLM67"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDeLItgjTcr6ix5aLpgH5llB8JAf4zb3cQ_WUX7XJI0Kbajg/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
       
                     </div>
       
                 </div>
             </li>
         
-            <li>
-                <div class="slide slide1">
-
+<li id="myBtn" onclick="poster(4)">
+                           <div class="slide slide1">
+                           
+                            IPL AUCTION
                     <div class="content ">
         
                         <div class="icon1">
@@ -1331,16 +1376,16 @@ body {
                     <div class="content text-center">
         
         
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLScAsnuj8RCMjqTdBY8F3H9pA1hoQdQk-Bmm4wvKu-Ant3xfXw/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOxHStZ6urmJshJlgE04OtFX0tEohFnt2mdoBjBc3r-w-rZg/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
         
                     </div>
         
                 </div>
             </li>
 
-            <li>
-                <div class="slide slide1">
-
+<li id="myBtn" onclick="poster(5)">
+                           <div class="slide slide1">
+                            REELS
                     <div class="content text-center">
           
                         <div class="icon1">
@@ -1357,16 +1402,16 @@ body {
           
                     <div class="content text-center">
           
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSenjoOE7YPPsZ_adiFN0KaRR4nwExrr9lpajhv9C0m2ZmZ-lw/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+                      <a href="https://forms.gle/znVfePHeB97fGrwV6"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
           
                     </div>
           
                 </div>
             </li>
 
-            <li>
-                <div class="slide slide1">
-
+<li id="myBtn" onclick="poster(6)">
+                           <div class="slide slide1">
+                            SINGING
                     <div class="content text-center">
             
                         <div class="icon1">
@@ -1383,16 +1428,16 @@ body {
             
                     <div class="content text-center">
             
-                       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPIeC2Z5Vntop6jYUptVTHfC44XrOjwKKJcU7nPVk6iB40tA/viewform"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+                       <a href="https://forms.gle/oXMVeSXzJFC825ML6"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
             
                     </div>
             
                 </div>
             </li>
 
-            <li>
-                <div class="slide slide1">
-
+<li id="myBtn" onclick="poster(7)">
+                           <div class="slide slide1">
+                      IPL AUCTION
                     <div class="content ">
         
                         <div class="icon1">
@@ -1410,7 +1455,7 @@ body {
                     <div class="content text-center">
         
         
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLScAsnuj8RCMjqTdBY8F3H9pA1hoQdQk-Bmm4wvKu-Ant3xfXw/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOxHStZ6urmJshJlgE04OtFX0tEohFnt2mdoBjBc3r-w-rZg/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
         
                     </div>
         
@@ -1421,7 +1466,6 @@ body {
         </ul>
       </div>
   
-
 
 
 
@@ -1497,6 +1541,13 @@ body {
     </div>
  </div>
  <br><br><br>
+
+ <div id="myModal" class="modal">
+ <div class="modal-content">
+  <span class="close">&times;</span>
+    <img src="" id="img1" alt="">
+</div>
+</div>
 
 
 <div class="footer text-center py-3">
@@ -1886,6 +1937,33 @@ $.fn.flipster = function(options) {
 	});
 };
 })( jQuery );
+
+    var modal = document.getElementById("myModal");
+
+  var i = document.getElementById("img1");
+
+    var btn = document.getElementById("myBtn");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    var urls = ["poster1.jpg", "poster2.jpg", "poster3.png", "poster4.jpg","poster5.jpg","poster6.jpg","poster7.jpg","poster8.jpg"];
+
+
+    function poster(j) {
+      modal.style.display = "block";
+      i.src="./images/"+urls[j];
+      
+    }
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
 
 </script>
 
