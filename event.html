@@ -11,7 +11,27 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float">
   <link href='https://fonts.googleapis.com/css?family=Vibur:400' rel='stylesheet' type='text/css'>
 
+<!-- 
+<script>
+  
+if(screen.width<600)
+  {
+    document.getElementById("events1").style.display="none";
+    document.getElementById("events2").style.display="block";
+  }
+  else if(screen.width>600){ 
+
+    document.getElementById("events2").style.display="none";
+    document.getElementById("events1").style.display="block";
+  }
+</script> -->
+
+
+
 <style> 
+
+
+
 
   body{
     background-image: url('./images/background.jpg..jpg');
@@ -44,6 +64,7 @@
   align-items: flex-end;
   transition: all 0.2s ease;
 }
+
 .about .bg_links {
   width: 40px;
   height: 40px;
@@ -173,7 +194,25 @@
   .navbar{
     background-color: transparent !important;
   }
+  .events1{
+    display: none;
+  }
 }
+@media screen and (min-width:767px) {
+  .events2{
+    display: none;
+  }
+  #img1{
+    width: 30%;
+    margin: auto;
+  }
+
+}
+
+
+
+
+
 .content1 {
   max-width: 1024px;
   width: 100%;
@@ -562,6 +601,8 @@ body {
   line-height: 1.25em;
   color: #FFF;
 }
+
+medo
 /* Custom Flipster Styles */
 .flipster {
   padding-bottom: 50px;
@@ -589,6 +630,8 @@ body {
    --------- jquery.flipster.css -----------
 -------------------------------------------*/
 /* @group Base Flipster Styles */
+
+
 .flipster {
   display: block;
   margin: 0 auto;
@@ -672,7 +715,7 @@ body {
 .flipster-coverflow .flip-content {
   -webkit-transition: all 350ms ease-in-out;
   -moz-transition: all 350ms ease-in-out;
-  -o-transition: all 350ms ease-in-out;
+  -o-transition: all 350ms ease-in-out; 
   -ms-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
   -webkit-box-reflect: below 0 -webkit-gradient(linear, left bottom, left top, color-stop(0.05, rgba(255, 255, 255, 0.12)), color-stop(0.2, transparent));
@@ -1108,6 +1151,14 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+.g{
+  border-radius: 20px;
+}
+
+.content{
+  padding: 4px;
+}
+
 
 </style>
 
@@ -1123,56 +1174,51 @@ body {
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #000000;font-weight: bolder;font-size: large;padding-left: 40%;">
-    <div class="container ">
-        
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light"  style="font-weight: bolder;font-size: large;">
+      <ul class="mx-auto">
       <a class="navbar-brand" href="index.html"><img src="./images/infinity-war-avengers-logo-symbol-trademark-emblem-wristwatch-transparent-png-401968.png" style="width: 60px;" alt=""></a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ">
-          <li class="nav-item ">
-            <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light" href="event.html">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-light" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+      </ul>
   </nav>
   <br><br>
 <br>  
- <br><br>
- <div class="container text-center">
+<br><br><br>
 <div class="row">
   <div class="col-sm-2">
     <img src="./images/kongu logo white png.png" style="width:170px">
   </div>
-  <div class="col-sm-8 text-center" style="margin: auto;color:azure;font-family:'outline';font-size:4vh;font-weight:bolder;"><h1>KONGU ENGINEERING COLLEGE</h1></div>
-  <div class="col-sm-2">
-    <img src="./images/Iste (1).png2.png" style="width:100px">
+
+  <div class="col text-center">
+    <img class="g" src="./images/company.jpg" alt="" style="width:370px">
+  </div>
+ 
+  <div class="col-sm-2 mt-4">
+    <img  src="./images/Iste (1).png2.png" style="width:100px">
   </div>
 </div>
-<div class="row">
-  <div  style="margin:auto;color:azure;font-family:'outline';font-size:4vh;font-weight:bolder;">INDIAN SOCIETY FOR TECHNICAL EDUCATION (ISTE) - KEC <br> [STUDENT CHAPTER] </div>
-</div>
-</div>
+<br><br>
+ <br><br>
+ <div class="container text-center">
+  <div class="row">
+    <div class="col-sm-8 text-center" style="margin: auto;color:azure;font-family:'outline';font-size:4vh;font-weight:bolder;"><h1>KONGU ENGINEERING COLLEGE</h1></div>
+    <div  style="margin:auto;color:rgb(255, 255, 255);font-family:'outline';font-size:4vh;font-weight:bolder;">INDIAN SOCIETY FOR TECHNICAL EDUCATION (ISTE) - KEC <br> [STUDENT CHAPTER]<br><br> </div>
+  
+    <div  style="margin:auto;color:rgb(255, 255, 255);font-family:'outline';font-size:4vh;font-weight:bolder;">A  National Level Symposium</div>
+  </div>
+  </div>
+  <br>
+  <div class="text-center" style="color:white;font-weight: bolder;font-size: larger;" >
+  Sponsered by UNIQ Technologies
+  </div>
+  <br>
+<br>
+
+<marquee behavior="" direction=""><h3 style="color: #EFEEEF;">Registration Ends by 25.05.2022 ( Limited Seats only [First come -> First Serve])</h3></marquee>
 
 <br>
 
-<marquee behavior="" direction=""><h3 style="color: #f1efef;">Registration Ends by 07.05.2022 ( Limited Seats only [First come -> First Serve])</h3></marquee>
-
-<br>
 
 
-
-
+<div class="events1" id="events1">
   <div class="container text-center" style="padding: 50px;" >
 
     <h2 style="color:azure;font-family:'outline';font-size:4vh;font-weight:bolder;">Technical Events</h2>
@@ -1181,7 +1227,7 @@ body {
        <ul class="flip-items">
            <li id="myBtn" onclick="poster(0)">
             <div class="slide slide1 ">
-              <p>Group Distribution</p>
+              <p></p>
 
                 <div class="content text-center">
   
@@ -1195,7 +1241,7 @@ body {
   
             </div>
   
-            <div class="slide slide2" style="background-color: #f1efef;">
+            <div class="slide slide2" style="background-color: #EFEEEF;">
   
                 <div class="content text-center">
   
@@ -1206,7 +1252,7 @@ body {
             </div>
   
            </li>
-            <li id="myBtn" >
+            <li id="myBtn" onclick="poster(1)">
                 <div class="slide slide1">
 
                     <div class="content ">
@@ -1221,7 +1267,7 @@ body {
         
                 </div>
         
-                <div class="slide slide2 "  style="background-color: #f1efef;">
+                <div class="slide slide2 "  style="background-color: #EFEEEF;">
         
                     <div class="content text-center">
         
@@ -1234,10 +1280,8 @@ body {
         <br>  
                 </div>
             </li>
-            <li id="myBtn" onclick="poster(1)">
-              <p>Paper</p>
+            <li id="myBtn" onclick="poster(2)">
                            <div class="slide slide1">
-
                     <div class="content text-center">
           
                         <div class="icon1">
@@ -1245,12 +1289,11 @@ body {
                           <img src="./images/image (22).png" style="width: 300px;" alt="">
           
                         </div>
-          
                     </div>
           
                 </div>
           
-                <div class="slide slide2"  style="background-color: #f1efef;">
+                <div class="slide slide2"  style="background-color: #FDFCFE;">
           
                     <div class="content text-center">
           
@@ -1262,11 +1305,10 @@ body {
             </li>
 <li id="myBtn" onclick="poster(3)">
                            <div class="slide slide1">
-CAD
                     <div class="content text-center">
             
                         <div class="icon1">
-            
+                          
                           <img src="./images/image (17).png" style="width: 300px;" alt="">
             
                         </div>
@@ -1278,6 +1320,7 @@ CAD
                 <div class="slide slide2"  style="background-color: #f1efef;">
             
                     <div class="content text-center">
+                      
             
                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSenjoOE7YPPsZ_adiFN0KaRR4nwExrr9lpajhv9C0m2ZmZ-lw/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
             
@@ -1288,7 +1331,7 @@ CAD
 
 <li id="myBtn" onclick="poster(3)">
                            <div class="slide slide1">
-                            CODING
+                            
                     <div class="content ">
         
                         <div class="icon1">
@@ -1301,7 +1344,7 @@ CAD
         
                 </div>
         
-                <div class="slide slide2 "  style="background-color: #f1efef;">
+                <div class="slide slide2 "  style="background-color: #EFEEEF;">
         
                     <div class="content text-center">
         
@@ -1329,9 +1372,9 @@ CAD
     <div class="flipster">
         <ul class="flip-items">
 
-            <li>
+            <li id="myBtn" onclick="poster(7)">
                 <div class="slide slide1 ">
-                  CONNEXION
+                  
                     <div class="content text-center">
       
                         <div class="icon1">
@@ -1344,21 +1387,22 @@ CAD
       
                 </div>
       
-                <div class="slide slide2" style="background-color: #f1efef;">
+                <div class="slide slide2" style="background-color: #EFEEEF;">
       
                     <div class="content text-center">
       
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDeLItgjTcr6ix5aLpgH5llB8JAf4zb3cQ_WUX7XJI0Kbajg/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDeLItgjTcr6ix5aLpgH5llB8JAf4zb3cQ_WUX7XJI0Kbajg/viewform?usp=sf_link"><button type="button" style="background-color: #68AC3E;" class="btn btn-primary">Register</button></a>
       
                     </div>
       
                 </div>
             </li>
         
-<li id="myBtn" onclick="poster(4)">
+
+
+<li id="myBtn" onclick="poster(6)">
                            <div class="slide slide1">
                            
-                            IPL AUCTION
                     <div class="content ">
         
                         <div class="icon1">
@@ -1371,52 +1415,52 @@ CAD
         
                 </div>
         
-                <div class="slide slide2 "  style="background-color: #f1efef;">
+                <div class="slide slide2 "  style="background-color: #EFEEEF;">
         
                     <div class="content text-center">
         
         
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOxHStZ6urmJshJlgE04OtFX0tEohFnt2mdoBjBc3r-w-rZg/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOxHStZ6urmJshJlgE04OtFX0tEohFnt2mdoBjBc3r-w-rZg/viewform?usp=sf_link"><button type="button" style="background-color: #68AC3E;" class="btn btn-primary">Register</button></a>
         
                     </div>
         
+                </div>
+            </li>
+
+<li id="myBtn" onclick="poster(4)">
+                           <div class="slide slide1">
+                         
+                    <div class="content text-center">
+          
+                        <div class="icon1">
+          
+                          <img src="./images/image (13).png" style="width: 290px;" alt="">
+          
+                        </div>
+          
+                    </div>
+          
+                </div>
+          
+                <div class="slide slide2"  style="background-color: #EFEEEF;">
+          
+                    <div class="content text-center">
+          
+                      <a href="https://forms.gle/znVfePHeB97fGrwV6"><button type="button" style="background-color:#68AC3E;" class="btn btn-primary">Register</button></a>
+          
+                    </div>
+          
                 </div>
             </li>
 
 <li id="myBtn" onclick="poster(5)">
                            <div class="slide slide1">
-                            REELS
-                    <div class="content text-center">
-          
-                        <div class="icon1">
-          
-                          <img src="./images/image (13).png" style="width: 300px;" alt="">
-          
-                        </div>
-          
-                    </div>
-          
-                </div>
-          
-                <div class="slide slide2"  style="background-color: #f1efef;">
-          
-                    <div class="content text-center">
-          
-                      <a href="https://forms.gle/znVfePHeB97fGrwV6"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
-          
-                    </div>
-          
-                </div>
-            </li>
-
-<li id="myBtn" onclick="poster(6)">
-                           <div class="slide slide1">
-                            SINGING
+                            
                     <div class="content text-center">
             
                         <div class="icon1">
             
-                          <img src="./images/image (14).png" style="width: 300px;" alt="">
+                          <img src="./images/image (14).png" style="width: 290px;" alt="">
             
                         </div>
             
@@ -1424,20 +1468,19 @@ CAD
             
                 </div>
             
-                <div class="slide slide2"  style="background-color: #f1efef;">
+                <div class="slide slide2"  style="background-color: #EFEEEF;">
             
                     <div class="content text-center">
             
-                       <a href="https://forms.gle/oXMVeSXzJFC825ML6"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+                       <a href="https://forms.gle/oXMVeSXzJFC825ML6"><button type="button" style="background-color: #68AC3E;" class="btn btn-primary">Register</button></a>
             
                     </div>
             
                 </div>
             </li>
 
-<li id="myBtn" onclick="poster(7)">
+<li id="myBtn" onclick="poster(6)">
                            <div class="slide slide1">
-                      IPL AUCTION
                     <div class="content ">
         
                         <div class="icon1">
@@ -1450,12 +1493,12 @@ CAD
         
                 </div>
         
-                <div class="slide slide2 "  style="background-color: #f1efef;">
+                <div class="slide slide2 "  style="background-color: #EFEEEF;">
         
                     <div class="content text-center">
         
-        
-                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOxHStZ6urmJshJlgE04OtFX0tEohFnt2mdoBjBc3r-w-rZg/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+      
+                      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOxHStZ6urmJshJlgE04OtFX0tEohFnt2mdoBjBc3r-w-rZg/viewform?usp=sf_link"><button type="button" style="background-color: #68AC3E;" class="btn btn-primary">Register</button></a>
         
                     </div>
         
@@ -1467,7 +1510,8 @@ CAD
       </div>
   
 
-
+    </div>
+  </div>
 
 
 
@@ -1482,16 +1526,300 @@ CAD
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <script>
-<!--
   $(function(){ $(".flipster").flipster({ style: 'carousel', start: 0 }); });
--->
+
 </script>
+  </div>
+
+<div class="events2">
+  
+  
+  <div id="tech" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center" data-bs-interval="10000">
+        <li  style="background: transparent;">
+          <div class="slide slide1 ">
+            <p></p>
+
+              <div class="content text-center" >
+
+                  <div class="im" id="myBtn" onclick="poster(2)">
+
+                      <img src="./images/image (22).png" style="width: 300px;" alt="">
+
+                  </div>
+                  
+                <div class="relative" style="position: relative;bottom:20px;">
+  
+                  <a href="https://forms.gle/41U4rDifc8YpFDq58"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+  
+                </div>
+                  
+
+              </div>
+
+          </div>
+
+          
+
+         </li>
+
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <li  style="background: transparent;">
+          <div class="slide slide1 ">
+            <p></p>
+
+              <div class="content text-center" >
+
+                  <div class="im" id="myBtn" onclick="poster(1)">
+
+                    <img  src="./images/image (16).png" style="width: 300px;" alt="">
+
+                  </div>
+                  
+                <div class="relative" style="position: relative;bottom:20px;">
+  
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScAsnuj8RCMjqTdBY8F3H9pA1hoQdQk-Bmm4wvKu-Ant3xfXw/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+  
+                </div>
+                  
+
+              </div>
+
+          </div>
+
+          
+
+         </li>
+      </div>
+      <div class="carousel-item">
+        <li  style="background: transparent;">
+          <div class="slide slide1 ">
+            <p></p>
+
+              <div class="content text-center" >
+
+                  <div class="im" id="myBtn" onclick="poster(0)">
+
+                      <img src="./images/image (15).png" style="width: 300px;" alt="">
+
+                  </div>
+                  
+                <div class="relative" style="position: relative;bottom:20px;">
+  
+                  <a href="https://forms.gle/33tTUiyejpEjRLM67"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+  
+                </div>
+                  
+
+              </div>
+
+          </div>
+
+          
+
+         </li>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <li  style="background: transparent;">
+          <div class="slide slide1 ">
+            <p></p>
+
+              <div class="content text-center" >
+
+                  <div class="im" id="myBtn" onclick="poster(3)">
+
+                    <img   src="./images/image (17).png" style="width: 300px;" alt="">
+
+                  </div>
+                  
+                <div class="relative" style="position: relative;bottom:20px;">
+  
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSenjoOE7YPPsZ_adiFN0KaRR4nwExrr9lpajhv9C0m2ZmZ-lw/viewform?usp=sf_link"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+  
+                </div>
+                  
+
+              </div>
+
+          </div>
+
+          
+
+         </li>
+         
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <li  style="background: transparent;">
+          <div class="slide slide1 ">
+            <p></p>
+
+              <div class="content text-center" >
+
+                  <div class="im" id="myBtn" onclick="poster(3)">
+
+                    <img src="./images/image (18).png" style="width: 300px;" alt="">
+
+                  </div>
+                  
+                <div class="relative" style="position: relative;bottom:20px;">
+  
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPIeC2Z5Vntop6jYUptVTHfC44XrOjwKKJcU7nPVk6iB40tA/viewform"><button type="button" style="background-color: #1772BC;" class="btn btn-primary">Register</button></a>
+  
+                </div>
+                  
+
+              </div>
+
+          </div>
+
+          
+
+         </li>
+         
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#tech" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#tech" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
 
 
 
+  <div id="nontech" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center" data-bs-interval="10000">
+        <li  style="background: transparent;">
+          <div class="slide slide1 ">
+            <p></p>
 
+              <div class="content text-center" >
+
+                  <div class="im" id="myBtn" onclick="poster(4)">
+
+                    <img  src="./images/image (13).png" style="width: 300px;" alt="">
+
+                  </div>
+                  
+                <div class="relative" style="position: relative;bottom:20px;">
+  
+                  <a href="https://forms.gle/znVfePHeB97fGrwV6"><button type="button" style="background-color: #68AC3E;" class="btn btn-primary">Register</button></a>
+  
+                </div>
+                  
+
+              </div>
+
+          </div>
+
+          
+
+         </li>
+
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <li  style="background: transparent;">
+          <div class="slide slide1 ">
+            <p></p>
+
+              <div class="content text-center" >
+
+                  <div class="im" id="myBtn" onclick="poster(5)">
+
+                    <img  src="./images/image (14).png" style="width: 300px;" alt="">
+
+                  </div>
+                  
+                <div class="relative" style="position: relative;bottom:20px;">
+  
+                  <a href="https://forms.gle/oXMVeSXzJFC825ML6"><button type="button" style="background-color: #68AC3E;" class="btn btn-primary">Register</button></a>
+  
+                </div>
+                  
+
+              </div>
+
+          </div>
+
+          
+
+         </li>
+      </div>
+      <div class="carousel-item">
+        <li  style="background: transparent;">
+          <div class="slide slide1 ">
+            <p></p>
+
+              <div class="content text-center" >
+
+                  <div class="im" id="myBtn" onclick="poster(6)">
+
+                    <img  src="./images/image (12).png" style="width: 300px;" alt="">
+
+                  </div>
+                  
+                <div class="relative" style="position: relative;bottom:20px;">
+  
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeOxHStZ6urmJshJlgE04OtFX0tEohFnt2mdoBjBc3r-w-rZg/viewform?usp=sf_link"><button type="button" style="background-color: #68AC3E;" class="btn btn-primary">Register</button></a>
+  
+                </div>
+                  
+
+              </div>
+
+          </div>
+
+          
+
+         </li>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <li  style="background: transparent;">
+          <div class="slide slide1 ">
+            <p></p>
+
+              <div class="content text-center" >
+
+                  <div class="im"  id="myBtn" onclick="poster(7)">
+
+                    <img  src="./images/image (11).png" style="width: 300px;" alt="">
+
+                  </div>
+                  
+                <div class="relative" style="position: relative;bottom:20px;">
+  
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDeLItgjTcr6ix5aLpgH5llB8JAf4zb3cQ_WUX7XJI0Kbajg/viewform?usp=sf_link"><button type="button" style="background-color: #68AC3E;" class="btn btn-primary">Register</button></a>
+  
+                </div>
+                  
+
+              </div>
+
+          </div>
+
+          
+
+         </li>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#nontech" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#nontech" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
 
 
 
@@ -1521,17 +1849,20 @@ CAD
        <div class="card1">
           
              <div class="icon"><i class="material-icons md-36">person_pin</i></div>
-             <p class="title">Staff Coordinator</p>
-             <p class="text">VijayaShanthy.S-AP/Civil </p>
+             <p class="title">Staff Coordinators</p>
              <p class="text">Dr.Hariharan-Prof/Mech</p>
+             <p class="text">VijayaShanthy.S-AP/Civil </p>
+             <br>
+             <p>&ensp;</p>
+             
           
        </div>
 
-       <div class="card1">
+       <div class="card1"  >
           
              <div class="icon"><i class="material-icons md-36">dialer_sip</i></div>
-             <p class="title">Contacts</p>
-             <p class="text" style="font-size:larger;font-weight: 48px;">Student Coordinators</p>
+             <p class="title">Student Coordinators [Contacts]</p>
+             <!-- <p class="text" style="font-size:larger;font-weight: 48px;">Student Coordinators</p> -->
              <span class="text">Sindhujaa</span><span><a class="text" href="tel:+917373063273">+917373063273</a></span>
              <span class="text">Navaneetha Pandi S</span><span><a class="text" href="tel:+919940912073">+919940912073</a></span>
           
@@ -1545,13 +1876,13 @@ CAD
  <div id="myModal" class="modal">
  <div class="modal-content">
   <span class="close">&times;</span>
-    <img src="" id="img1" alt="">
+    <img src=""  id="img1" alt="">
 </div>
 </div>
 
 
 <div class="footer text-center py-3">
-  <!-- <p class="hi" style="font-size:15px;color: white;"><i class="fa fa-wikipedia-w " ></i>eb Designed & developed by : <br><span>Subiga G 20ITR102</span> <br> <span>Sudharsan V K 20ITR103</span> </p> -->
+  <p class="hi" style="font-size:15px;color: white;"><i class="fa fa-wikipedia-w " ></i>eb Designed & developed by <br><span>Subiga G 20ITR102 &ensp;</span><a class="text" href="tel:+919345697122">+919345697122</a> <br><span>Sudharsan V K 20ITR103 &ensp;</span><a class="text" href="tel:+916374386312">+916374386312</a> </p>
 </div>
 
 
@@ -1566,6 +1897,16 @@ CAD
 </body>
 
 <script>
+
+
+
+
+
+
+
+
+
+
     (function($) {
 
 $.fn.flipster = function(options) {
@@ -1946,7 +2287,7 @@ $.fn.flipster = function(options) {
 
     var span = document.getElementsByClassName("close")[0];
 
-    var urls = ["poster1.jpg", "poster2.jpg", "poster3.png", "poster4.jpg","poster5.jpg","poster6.jpg","poster7.jpg","poster8.jpg"];
+    var urls = ["poster1.jpg", "poster2.jpg", "poster3.jpg", "poster4.jpg","poster5.jpg","poster6.jpg","poster7.jpg","poster8.jpg"];
 
 
     function poster(j) {
@@ -1964,6 +2305,7 @@ $.fn.flipster = function(options) {
         modal.style.display = "none";
       }
     }
+
 
 </script>
 
